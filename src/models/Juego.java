@@ -74,7 +74,7 @@ public class Juego {
 	}
 
 	private void suerteCompetidor(Equipo equipo) {
-		Arquero temp = equipo.competidorConSuerte();
+		Arquero temp = equipo.competidorConMayorPuntaje();
 		if (arqueroSuerteActual != null) {
 			if (arqueroSuerteActual.equals(temp)) {
 				contadorArqueroSuperSuerte++;

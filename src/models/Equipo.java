@@ -57,16 +57,6 @@ public class Equipo {
 		this.puntajeParcial = 0;
 	}
 
-	public Arquero competidorConSuerte() {
-		Arquero competidorTemp = competidores.get(0);
-		for (Arquero competidor : competidores) {
-			if (competidor.getSuerte() > competidorTemp.getSuerte()) {
-				competidorTemp = competidor;
-			}
-		}
-		return competidorTemp;
-	}
-
 	public void reiniciarResistencia() {
 		for (Arquero competidor : competidores) {
 			competidor.reiniciarResistencia();
@@ -125,6 +115,12 @@ public class Equipo {
 		return puntos;
 	}
 
+
+
+
+
+
+	
 	public void setPuntosJuego(int puntos) {
 		this.puntos = (this.puntos + puntos);
 	}
