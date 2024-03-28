@@ -10,7 +10,7 @@ public class Equipo {
 	private int contadorGanarJuego;
 	private ArrayList<Arquero> competidores;
 	private ArrayList<Integer> puntosJuego;
-	private ArrayList<Integer> puntosLaboratorio;
+	private ArrayList<Integer> labels;
 	private int puntos;
 
 	public Equipo(String nombreEquipo, ArrayList<Arquero> competidores) {
@@ -130,15 +130,15 @@ public class Equipo {
 	}
 
 	public ArrayList<Integer> getPuntosLaboratorio() {
-		puntosLaboratorio = new ArrayList<>();
+		labels = new ArrayList<>();
 		for (int i = 0; i < competidores.get(0).getPuntosPorVuelta().size(); i++) {
 			int puntos = 0;
 			for (Arquero competidor : competidores) {
 				puntos += competidor.getPuntosPorVuelta().get(i);
 			}
-			puntosLaboratorio.add(puntos);
+			labels.add(puntos);
 		}
-		return puntosLaboratorio;
+		return labels;
 	}
 
 	public void reiniciarPuntosJuego() {

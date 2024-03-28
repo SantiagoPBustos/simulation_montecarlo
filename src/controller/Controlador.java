@@ -29,14 +29,14 @@ public class Controlador implements ActionListener {
 	private void data() {
 		ArrayList<Arquero> firstEquipoCompetitors = new ArrayList<>();
 		for (int i = 0; i < 6; i++) {
-			firstEquipoCompetitors.add(new Arquero("Jugador Equipo 1 : " + (i + 1), Campeon.generarGenero()));
+			firstEquipoCompetitors.add(new Arquero("Jugador Equipo Uno : NPC " + (i + 1), Campeon.generarGenero()));
 		}
-		Equipo firstEquipo = new Equipo("Equipo 1 ", firstEquipoCompetitors);
+		Equipo firstEquipo = new Equipo("Equipo Uno", firstEquipoCompetitors);
 		ArrayList<Arquero> secondEquipoCompetitors = new ArrayList<>();
 		for (int i = 0; i < 6; i++) {
-			secondEquipoCompetitors.add(new Arquero("Jugador Equipo 2 : " + (i + 1), Campeon.generarGenero()));
+			secondEquipoCompetitors.add(new Arquero("Jugador Equipo Dos : NPC" + (i + 1), Campeon.generarGenero()));
 		}
-		Equipo secondEquipo = new Equipo("Equipo 2 ", secondEquipoCompetitors);
+		Equipo secondEquipo = new Equipo("Equipo Dos ", secondEquipoCompetitors);
 
 		ArrayList<Equipo> Equipos = new ArrayList<>();
 		Equipos.add(firstEquipo);
